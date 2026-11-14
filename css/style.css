@@ -348,3 +348,122 @@ body {
         width: 45px;
     }
 }
+
+
+/* WEDDING TIMELINE */
+
+.timeline {
+    padding: 100px 20px;
+    background: #F3EAE2;
+    color: #35121F;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 70px;
+}
+
+.section-subtitle {
+    color: #9B765F;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 7vw, 65px);
+    font-weight: 400;
+}
+
+.section-description {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #806B65;
+}
+
+.timeline-list {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 90px 20px 1fr;
+    gap: 20px;
+    min-height: 130px;
+    position: relative;
+}
+
+.timeline-time {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    color: #8A4056;
+    text-align: right;
+}
+
+.timeline-dot {
+    width: 11px;
+    height: 11px;
+    background: #8A4056;
+    border: 2px solid #D0B18A;
+    border-radius: 50%;
+    margin-top: 9px;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-item:not(:last-child) .timeline-dot::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    background: #D0B18A;
+    top: 9px;
+    left: 3px;
+}
+
+.timeline-content {
+    padding-bottom: 35px;
+}
+
+.timeline-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #806B65;
+}
+
+/* MOBILE TIMELINE */
+
+@media (max-width: 480px) {
+    .timeline {
+        padding: 75px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 65px 15px 1fr;
+        gap: 12px;
+        min-height: 125px;
+    }
+
+    .timeline-time {
+        font-size: 21px;
+    }
+
+    .timeline-content h3 {
+        font-size: 23px;
+    }
+}
