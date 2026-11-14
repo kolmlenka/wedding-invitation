@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #35121F;
+    color: #F3EAE2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(123, 52, 74, 0.35),
+            transparent 70%
+        ),
+        #35121F;
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #D0B18A;
+    margin-bottom: 35px;
+}
+
+.names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 10vw, 110px);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.names span {
+    display: block;
+    font-size: 55px;
+    color: #D0B18A;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.divider {
+    width: 65px;
+    height: 1px;
+    background-color: #D0B18A;
+    margin: 35px auto;
+}
+
+.invitation-text {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 3px;
+    color: #E1CFC5;
+}
+
+.wedding-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    color: #D0B18A;
+}
+
+.open-button {
+    margin-top: 45px;
+    padding: 16px 35px;
+    background: transparent;
+    border: 1px solid #D0B18A;
+    color: #F3EAE2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.open-button:hover {
+    background-color: #D0B18A;
+    color: #35121F;
+}
+
+.bottom-note {
+    position: absolute;
+    bottom: 30px;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #B99B88;
+}
